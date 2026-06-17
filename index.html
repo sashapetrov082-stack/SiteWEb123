@@ -3,22 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Модный гид | Подборки женской одежды</title>
+<title>FOUND IT | Находки — женские образы на каждый день</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #1a1612;
-    --accent: #d9a86c;
-    --accent-light: #f3e0c5;
-    --text: #f5f0e8;
-    --muted: #b8aea0;
+    --bg-1: #fdeef5;
+    --bg-2: #eaf2fb;
+    --bg-3: #f1e9fb;
+    --lilac: #b79ce0;
+    --pink: #f4a6c6;
+    --blue: #a8d2ec;
+    --text: #4a3f55;
+    --muted: #8d80a0;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background: radial-gradient(circle at 50% 0%, #2a2218, var(--bg) 70%);
+    background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-3) 50%, var(--bg-2) 100%);
     color: var(--text);
   }
   .wrap {
@@ -33,17 +36,24 @@
   .badge {
     letter-spacing: 0.25em;
     font-size: 12px;
-    color: var(--accent);
+    color: var(--lilac);
     text-transform: uppercase;
     margin-bottom: 18px;
+    font-weight: 600;
   }
   h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(32px, 8vw, 56px);
     line-height: 1.1;
     margin-bottom: 16px;
+    color: var(--text);
   }
-  h1 span { color: var(--accent); }
+  h1 span {
+    background: linear-gradient(90deg, var(--pink), var(--lilac));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
   p.subtitle {
     max-width: 480px;
     color: var(--muted);
@@ -59,8 +69,9 @@
     margin-bottom: 40px;
   }
   .tags span {
-    border: 1px solid rgba(217,168,108,0.4);
-    color: var(--accent-light);
+    border: 1px solid rgba(183,156,224,0.4);
+    background: rgba(255,255,255,0.5);
+    color: var(--text);
     padding: 6px 14px;
     border-radius: 999px;
     font-size: 13px;
@@ -69,19 +80,19 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #d9a86c, #b9844a);
-    color: #1a1612;
+    background: linear-gradient(135deg, var(--pink), var(--lilac), var(--blue));
+    color: #fff;
     font-weight: 600;
     font-size: 17px;
     padding: 16px 36px;
     border-radius: 999px;
     text-decoration: none;
-    box-shadow: 0 10px 30px rgba(217,168,108,0.25);
+    box-shadow: 0 10px 30px rgba(183,156,224,0.35);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 36px rgba(217,168,108,0.35);
+    box-shadow: 0 14px 36px rgba(183,156,224,0.45);
   }
   .cta svg { width: 22px; height: 22px; flex-shrink: 0; }
   .note {
@@ -92,14 +103,14 @@
   footer {
     margin-top: 50px;
     font-size: 12px;
-    color: #6e6657;
+    color: #b3a8c2;
   }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="badge">style guide</div>
-    <h1>Подборки <span>женской&nbsp;моды</span><br>каждый день</h1>
+    <div class="badge">FOUND IT | Находки</div>
+    <h1>Женские <span>образы</span><br>на каждый день</h1>
     <p class="subtitle">
       Тренды, образы, идеи для гардероба и находки из масс-маркета и не только —
       собираем самое стильное в одном телеграм-канале.
@@ -117,7 +128,7 @@
       Перейти в Telegram-канал
     </a>
     <div class="note">Бесплатные подборки и идеи образов каждый день ✨</div>
-    <footer>© 2026 · Модный гид</footer>
+    <footer>© 2026 · FOUND IT | Находки</footer>
   </div>
 </body>
 </html>
